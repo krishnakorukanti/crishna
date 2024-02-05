@@ -1,58 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>sppeed.com - Welcome</title>
-    <style>
-        body {
-            background-color: #1a1a1a;
-            color: #fff;
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>sppeed.com - Welcome</title>
+  <style>
+    body {
+      background-color: #191b28;
+      color: #fff;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
 
-        #container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-        }
+    #container {
+      text-align: center;
+      animation: fadeIn 2s ease-out;
+    }
 
-        h1 {
-            font-size: 2em;
-            margin-bottom: 20px;
-            animation: fadeInUp 1.5s ease-out;
-        }
+    h1 {
+      font-size: 3em;
+      margin-bottom: 20px;
+      color: #f39c12;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+      animation: bounceIn 1.5s ease-out;
+    }
 
-        p {
-            font-size: 1.2em;
-            margin-bottom: 40px;
-            animation: fadeInUp 2s ease-out;
-        }
+    p {
+      font-size: 1.5em;
+      margin-bottom: 30px;
+      color: #7f8c8d;
+    }
 
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-    </style>
+    a {
+      color: #3498db;
+      text-decoration: none;
+      transition: color 0.3s ease-in-out;
+    }
+
+    a:hover {
+      color: #2980b9;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    @keyframes bounceIn {
+      from {
+        transform: scale(0.8);
+      }
+      to {
+        transform: scale(1);
+      }
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
 </head>
 <body>
 
-    <div id="container">
-        <h1>Welcome to sppeed.com</h1>
-        <p>Owned by Crishna</p>
-        <p>Contact: <a href="mailto:hello@crishna.in">hello@crishna.in</a></p>
-    </div>
+<div id="container">
+  <h1>Welcome to <span style="font-weight: bold;">sppeed.com</span></h1>
+  <p>owned by Crishna.</p>
+  <p>Cooking something – it's either a masterpiece in the making or a comical calamity in disguise.</p>
+  <p>Feel free to reach out with your thoughts, musings, or even a good joke at <a href="mailto:hello@crishna.in">hello@crishna.in</a>. After all, laughter is the best medicine!</p>
+
+
+  <p>Connect with Crishna on Instagram: <a href="https://www.instagram.com/crishna_korukanti/" target="_blank" rel="noopener noreferrer">@crishna_korukanti</a></p>
+</div>
 
 </body>
 </html>
