@@ -3,11 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to Sppeed</title>
+    <title>sppeed.com - Welcome</title>
+    <style>
+        body {
+            background-color: #1a1a1a;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        #container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        h1 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            animation: fadeInUp 1.5s ease-out;
+        }
+
+        p {
+            font-size: 1.2em;
+            margin-bottom: 40px;
+            animation: fadeInUp 2s ease-out;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
 </head>
 <body>
 
-    <h1>Hello!, Welcome to Sppeed.com </h1>
+    <div id="container">
+        <h1>Welcome to sppeed.com</h1>
+        <p>Owned by Crishna</p>
+        <p>Contact: <a href="mailto:hello@crishna.in">hello@crishna.in</a></p>
+    </div>
 
 </body>
 </html>
